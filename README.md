@@ -1,2 +1,2 @@
-# loganbertrand.github.io
-Personal Bio Site
+# basic-portfolio
+First Homework Assignment for Bootcamp

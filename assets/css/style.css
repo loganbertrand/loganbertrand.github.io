@@ -1,10 +1,39 @@
+body{
+    background-image: url('../images/qbkls.png');
+}
 h1 {
     background-color: #4aaaa5;
-    width: 33%;
+    width: fit-content;
     color: white;
+    padding: 15px;
+    margin: 0px;
     
 }
-
 .header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+.nav-anchors {
+    padding: 20px 10px 10px 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+a {
+    padding: 5px;
+}
+.about-me {
+    margin: 20px 75px 40px 150px;
+    background-color: #ffffff;
+    width: 960px;
     
+}
+.picture{
+    float: left;
+    padding: 20px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #666666;
 }
