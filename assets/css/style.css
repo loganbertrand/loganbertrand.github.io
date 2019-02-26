@@ -1,5 +1,8 @@
+/*For Every Page*/
 body{
     background-image: url('../images/qbkls.png');
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
 }
 h1 {
     background-color: #4aaaa5;
@@ -7,11 +10,11 @@ h1 {
     color: white;
     padding: 15px;
     margin: 0px;
-    
 }
 .header {
+    width: 100vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: white;
 }
 .nav-anchors {
@@ -22,18 +25,145 @@ h1 {
 a {
     padding: 5px;
 }
-.about-me {
-    margin: 20px 75px 40px 150px;
-    background-color: #ffffff;
-    width: 960px;
-    
+a:default{
+    color: #777777;
 }
-.picture{
-    float: left;
-    padding: 20px;
+a:visited{
+    color: #777777;
 }
-footer {
-    display: flex;
-    justify-content: center;
-    background-color: #666666;
+a:hover {
+    color: #4aaaa5;
 }
+a:active {
+    color: black;
+}
+h2{
+    color: #4aaaa5;
+}
+
+/*About Me Page*/
+    .about-me {
+        margin: auto;
+        background-color: #ffffff;
+        width: 960px;
+        position: center;
+        
+    }
+    hr {
+        width: 97%;
+    }
+    .am-header {
+        padding: 20px;
+    }
+    p {
+        line-height: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
+        color: #777777;
+    }
+    .picture{
+        float: left;
+        padding: 15px;
+    }
+
+/*Portfolio Page*/
+    .portfolio{
+        margin: auto;
+        background-color: #ffffff;
+        width: 960px;
+        position: center;
+    }
+    .portfolio-body{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-grow: 2;
+    }
+    .portfolio-header{
+        padding: 20px;
+    }
+    .spider-pic{
+        position: relative;
+        margin: 20px;
+    }
+    .text-box{
+        position: absolute;
+        text-align: center;
+        color: #ffffff;
+        background-color: #4aaaa5;
+        z-index: 45;
+        bottom: 0px;
+        width: 300px;
+    }
+
+/*Contact Page*/
+    .contact-header{
+        padding: 20px;
+    }
+    .contact {
+        margin: auto;
+        background-color: #ffffff;
+        width: 960px;
+        position: center;
+    }
+    .contact-body{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .name{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .email{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .message{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #message {
+        height: 100px;
+        width: 97%;
+        padding: 5px;
+    }
+    #name {
+        height: 15px;
+        width: 97%;
+        padding: 5px;
+    }
+    #email {
+        height: 15px;
+        width: 97%;
+        padding: 5px;
+    }
+    .submit {
+        padding: 15px 30px 15px 30px;
+        margin: 20px;
+        background-color: #4aaaa5;
+        color: #ffffff;
+    }
+    .submit:hover {
+        cursor: pointer;
+    }
+    form{
+        color: #777777;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+/*Footer*/
+    .copyright{
+        padding-top: 15px;
+    }
+    .footer {
+        display: flex;
+        justify-content: center;
+        height: 50px;
+        background-color: #666666;
+        line-height: 20px;
+        margin-top: 30px;
+        border-top: 8px solid #4aaaa5;
+        width: 100vw;
+        color:black;
+    }
