@@ -1,2 +1,1 @@
-# Responsive-Portfolio
-Portfolio made with responsive aspects
+Portfolio has been recreated for better functionality
