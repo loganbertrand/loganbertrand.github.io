@@ -1,2 +1,2 @@
-# basic-portfolio
-First Homework Assignment for Bootcamp
+# Responsive-Portfolio
+Portfolio made with responsive aspects
