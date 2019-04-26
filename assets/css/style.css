@@ -50,7 +50,7 @@ main {
 
 
 /* portfolio page */
-.main-portfolio-section{
+#portfolio-container{
   flex-direction: row;
   justify-content: space-evenly;
 }
@@ -66,5 +66,21 @@ main {
 #email-box{
   background-color: #183446;
   padding: 40px;
+  
+}
+
+/*Media Queries*/
+
+@media screen and (max-width:980px){
+  
+
+}
+
+@media screen and (max-width:768px){
+  
+}
+
+@media screen and (max-width:640px){
+  
   
 }
