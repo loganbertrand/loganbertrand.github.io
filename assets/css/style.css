@@ -68,9 +68,15 @@ main {
   padding: 40px;
   
 }
-
-/*Media Queries*/
-
+@media screen and (min-width:640px){
+  #brand-logo-desktop{
+    display: block;
+  }
+  #brand-logo-mobile{
+    display: none;
+  }
+  
+}
 @media screen and (max-width:980px){
   
 
@@ -79,8 +85,41 @@ main {
 @media screen and (max-width:768px){
   
 }
-
 @media screen and (max-width:640px){
-  
-  
+  #brand-logo-desktop{
+    display: none;
+  }
+  #brand-logo-mobile{
+    display: block;
+    height: 45px;
+    width: 45px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .brand-logo{
+    text-align: center;
+    margin-left: 0px;
+  }
+  .about-me{
+    text-align: center;
+  }
+  .auth-image{
+    display: block;
+    margin: 0 auto;
+    float: none;
+  }
+  #about-me-row{
+
+    text-align: center;
+  }
+  #contact-header{
+    text-align: center;
+  }
+  #contact-photo{
+    height: 0px;
+    width: 0px;
+  }
+  .portfolio-header{
+    text-align: center;
+  }
 }
