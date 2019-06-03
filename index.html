@@ -19,14 +19,14 @@
 <body>
   <!--Header-->
   <header id="masthead">
-
+    <div class="navbar-fixed">
     <nav>
       <div class="nav-wrapper">
-        <a href="./index.html" id="brand-logo-desktop" class="brand-logo">Logan Bertrand</a>
+        <a href="#landing" id="brand-logo-desktop" class="brand-logo">Logan Bertrand</a>
         <img src="./assets/images/android-chrome-512x512.png" href="./index.html" id="brand-logo-mobile" class="brand-logo">
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="index.html">About Me</a></li>
+          <li><a href="#aboutMe">About Me</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -38,11 +38,23 @@
         </ul>
       </div>
     </nav>
-
+  </div>
   </header>
-  <!--Main Body of Webpage-->
+  <!--Jumbotron style Landing Page-->
+  <section class="hero">
+    <a name = "landing"></a>
+    <div class="hero-inner">
+        <h1>My name is Logan Bertrand</h1>
+        <h2>I am a Full-Stack Web Developer</h2>
+        <a href="#aboutMe" class="waves-effect waves-light btn">Take a Look</a>
+    </div>
+  </section>
+
+
+  <!--About Me Body of Webpage-->
   <div id="main-container" class="container">
-    <section class="main-section">
+    <section class="about-me-section">
+      <a name = "aboutMe"></a>
       <h1 class="about-me">About Me</h1>
       <div id="about-me-row" class="row">
         <div class="col s12 m4">
@@ -55,7 +67,7 @@
         degree, but was still craving that challenge. I finally decided to take the plunge and work my hardest to become
         a full-stack web developer!</p>
 
-      <p>We are now a few months into the cirriculum, and my projects can be viewed on the portfolio link above. On the front-end side of developemnt, I have enjoyed the challengeof making a website look and feel simple but effective. Javascript has been some of my favorite code, understanding the functionality of so many different programs. I have immensely enjoyed the front-end development of websites, and look forward to learning new back-end skills to complete my full-stack exeprtise.  </p>
+      <p>We are now a few months into the cirriculum, and my projects can be viewed on the portfolio link above. On the front-end side of developemnt, I have enjoyed the challenge of making a website look and feel simple but effective. Javascript has been some of my favorite code, understanding the functionality of so many different programs. I have immensely enjoyed the front-end development of websites, and look forward to learning new back-end skills to complete my full-stack exeprtise.  </p>
 
       <p>I am looking forward to the rest of this class, and the future beyond it. My desire is to utilize these skills
         in any capacity within the video game industry, where I can continue to grow and hone my skills for years to
@@ -63,6 +75,44 @@
       </div>
     </section>
 
+    <section class="portfolio-section">
+        <h1 class="portfolio-header">Portfolio</h1>
+        <ul class="collapsible">
+            <li class="active">
+              <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+          </ul>
+    </section>
+    <section class="contact-section">
+        <h1 id="contact-header">Contact</h1>
+        <div class="col s12 m4">
+            <div class="card horizontal">
+              <div class="card-image">
+                <img id="contact-photo" src="./assets/images/profile-picture-1.jpeg" height="150px" width="100px">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <a href="mailto:loganwbertrand@gmail.com" target="_blank">Email: loganwbertrand@gmail.com</a>
+                  <p>Phone: (760) 822-1629</p>
+                  <a href="./assets/misc/01-2019 LBertrand Resume .pdf" target="_blank">Resume</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
   </div>
   <footer class="page-footer">
       <div class="footer-copyright">

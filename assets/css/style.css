@@ -3,10 +3,30 @@ body {
   font-size: 18px;
   line-height: 34px;
   color: #777777;
-  background: url("../images/qbkls.png");
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+}
+.hero{
+/* Sizing */
+width: 100vw;
+height: 100vh;
+
+/* Flexbox stuff */
+display: flex;
+justify-content: center;
+align-items: center;
+
+/* Text styles */
+text-align: center;
+color: white;
+
+/* Background styles */
+background-color: #254E70;
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
 }
 main {
   flex: 1 0 auto;
@@ -23,7 +43,7 @@ main {
 
 /* header and footer*/
 .nav-wrapper , .page-footer{
-  background-color: #254E70;
+  background-color: #2C363F;
 }
 .brand-logo{
   margin-left: 7px;
@@ -34,7 +54,7 @@ main {
 }
 
 /* Index Body */
-.main-section{
+.about-me-section{
  justify-content: space-around;
 }
 .auth-image{
@@ -57,7 +77,6 @@ main {
 .portfolio-header{
   color: #37718E;
 }
-
 
 /* contact page */
 #contact-header{
