@@ -6,8 +6,10 @@ document.addEventListener('DOMContentLoaded', function() {
     var instances = M.Sidenav.init(elems);
   });
 
-//Event Listener for Collapsible list
+//Event Listener for Slider
 document.addEventListener('DOMContentLoaded', function() {
-  var elems = document.querySelectorAll('.collapsible');
-  var instances = M.Collapsible.init(elems, options);
+  var elems = document.querySelectorAll('.carousel');
+  var instances = M.Carousel.init(elems, {
+    indicators: true
+  });
 });

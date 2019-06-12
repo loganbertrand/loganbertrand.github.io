@@ -22,7 +22,7 @@ text-align: center;
 color: white;
 
 /* Background styles */
-background-color: #254E70;
+background-image: url("../images/dan-aragon-382945-unsplash.jpg");
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
@@ -70,15 +70,49 @@ main {
 
 
 /* portfolio page */
-#portfolio-container{
-  flex-direction: row;
-  justify-content: space-evenly;
+.portfolio-section{
+  background-color: #254E70;
+  /* Sizing */
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+
+
+  height: 100vh;
+
 }
-.portfolio-header{
-  color: #37718E;
+.carousel{
+ align-items: center;
+ text-align: center;
+  width: 60vw;
+  margin-left: 20%;
+  padding-top: 30vh;
+  padding-bottom: 15vh;
 }
+/* Saving images for later changes
+#pick-up-games{
+  background-image: url("../images/basketball.jpg")
+}
+#friend-finder{
+  background-image: url("../images/friend-finder.png")
+}
+#liri{
+  background-image: url("../images/siri.jpg")
+}
+#bamazon{
+  background-image: url("../images/storefront.jpg")
+}
+*/
 
 /* contact page */
+.contact-section{
+/* Sizing */
+
+height: 100vh;
+}
 #contact-header{
   color: #37718E;
 }

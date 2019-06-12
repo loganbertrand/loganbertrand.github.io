@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/9d235c6ec7.js"></script>
   <link rel='icon' href='./assets/images/android-chrome-512x512.png' type='image/x-icon'/ >
   <title>About | Logan Bertrand</title>
   <!--Materialize Icons-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+ 
   <!--My CSS-->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
@@ -27,14 +27,14 @@
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
           <li><a href="#aboutMe">About Me</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
         <!--Mobile Dropdown-->
         <ul class="sidenav" id="mobile-demo">
-          <li><a href="index.html">About Me</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#aboutMe">About Me</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -74,29 +74,39 @@
         come. Thank you for stopping by!</p>
       </div>
     </section>
-
+    <!--Portfolio Section-->
     <section class="portfolio-section">
-        <h1 class="portfolio-header">Portfolio</h1>
-        <ul class="collapsible">
-            <li class="active">
-              <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
-          </ul>
+        <a name = "portfolio"></a>
+        <br><br><br>
+        <div class="carousel carousel-slider center">
+            <div id="pick-up-games" class="carousel-item red white-text" href="#one!">
+              <h2>Pick Up Games</h2>
+              <p class="white-text">Find or creat nearby pick-up games with this web application!</p>
+              <a href="https://github.com/loganbertrand/pick-up-games" class="btn center waves-effect white grey-text darken-text-2">Live App</a>
+              <a href="https://loganbertrand.github.io/pick-up-games/" class="btn center waves-effect white grey-text darken-text-2">GitHub</a>
+            </div>
+            <div id="friend-finder" class="carousel-item amber white-text" href="#two!">
+              <h2>Friends Finder</h2>
+              <p class="white-text">Web Application using surevy information to match the user with another user with the closest match!</p>
+              <a href="https://loganb-friend-finder.herokuapp.com/" class="btn center waves-effect white grey-text darken-text-2">Live App</a>
+              <a href="https://github.com/loganbertrand/friend-finder" class="btn center waves-effect white grey-text darken-text-2">GitHub</a>
+            </div>
+            <div id="liri" class="carousel-item green white-text" href="#three!">
+              <h2>LIRI Node App</h2>
+              <p class="white-text">Node Application similar to SIRI</p>
+              <a href="https://github.com/loganbertrand/liri-node-app" class="btn center waves-effect white grey-text darken-text-2">GitHub</a>
+            </div>
+            <div id="bamazon" class="carousel-item blue white-text" href="#four!">
+              <h2>Amazon-like Node App </h2>
+              <p class="white-text">Node Application managing inventory with buying prompts</p>
+              <a href="https://github.com/loganbertrand/bamazon" class="btn center waves-effect white grey-text darken-text-2">GitHub</a>
+            </div>
+          </div>
     </section>
+
+    <!--Contact Section-->
     <section class="contact-section">
+        <a name = "contact"></a>
         <h1 id="contact-header">Contact</h1>
         <div class="col s12 m4">
             <div class="card horizontal">
@@ -105,9 +115,11 @@
               </div>
               <div class="card-stacked">
                 <div class="card-content">
-                  <a href="mailto:loganwbertrand@gmail.com" target="_blank">Email: loganwbertrand@gmail.com</a>
-                  <p>Phone: (760) 822-1629</p>
-                  <a href="./assets/misc/01-2019 LBertrand Resume .pdf" target="_blank">Resume</a>
+                    <i class="far fa-envelope"></i><a href="mailto:loganwbertrand@gmail.com" target="_blank"> loganwbertrand@gmail.com</a>
+                  <p><i class="fas fa-phone"></i> (760) 822-1629</p>
+                  <i class="far fa-file-alt"></i><a href="./assets/misc/01-2019 LBertrand Resume .pdf" target="_blank"> Resume   </a>
+                  <i class="fab fa-github"></i><a href="https://github.com/loganbertrand" target="_blank"> GitHub   </a>
+                  <i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/logan-bertrand-/" target="_blank"> LinkedIn</a>
                 </div>
               </div>
             </div>
@@ -120,6 +132,8 @@
         </div>
       </footer>
   <!--Javascript-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="text/javascript" src="assets/javascript/code.js"></script>
 </body>
 
