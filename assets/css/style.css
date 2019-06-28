@@ -1,178 +1,172 @@
-body {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 18px;
-  line-height: 34px;
-  color: #777777;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+/*HTML*/
+html{
+    position: relative;
+    min-height: 100%;
 }
-.hero{
-/* Sizing */
-width: 100vw;
-height: 100vh;
-
-/* Flexbox stuff */
-display: flex;
-justify-content: center;
-align-items: center;
-
-/* Text styles */
-text-align: center;
-color: white;
-
-/* Background styles */
-background-image: url("../images/dan-aragon-382945-unsplash.jpg");
-background-size: cover;
-background-position: center center;
-background-repeat: no-repeat;
-background-attachment: fixed;
+body{
+    margin-bottom: 60px;
 }
-main {
-  flex: 1 0 auto;
+/*Jumbotron*/
+.jumbotron{
+    height: 100vh;
+
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Text styles */
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px pink;
+
+    /* Background styles */
+    background-image: url("../images/dan-aragon-382945-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    margin-bottom: 7rem;
 }
 
-* {
-  box-sizing: border-box;
+/* Portfolio Hover Properties */
+.carousel-item .carousel-caption {
+    display: none;
+  }
+  
+.carousel-item:hover .carousel-caption {
+    display: block;
+  }
+
+/* Portfolio Section */
+#carousel-card{
+    padding-right: 0;
+    padding-left:0;
+    
+    align-items: center;
+}
+.carousel-title{
+    text-shadow: 1px 1px 2px black;
+}
+.carousel-caption{
+    margin-top: -10px;
+}
+.carousel-caption:hover{
+    background-color: black;
+    opacity:0.5;
+}
+.carousel-item:hover > .carousel-caption {
+
+    background-color:#f5f5f5;
+    opacity:1.0;
+    border-radius: 25px;
+   
+}
+.carousel-control-prev, .carousel-control-next{
+    color: black;
+}
+.btn-primary{
+    width: 80px;
+  height: 28px;
+  font-family: 'Hind', sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  
+  font-weight: 400;
+  color: white;
+  background-color: #03C3D5;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
 }
 
-/* general */
-.btn{
-  background-color:#C33C54;
+.btn-primary:hover {
+    background-color: #03C3D5;
+    box-shadow: 0px 15px 20px rgba(67, 68, 68, 0.4);
+    color: white;
+    transform: translateY(-7px);
+  }
+
+#portfolio-hdr, p{
+    text-align: center;
+    align-items: center;
+   
 }
 
-/* header and footer*/
-.nav-wrapper , .page-footer{
-  background-color: #2C363F;
+#portfolio-hdr{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    
 }
-.brand-logo{
-  margin-left: 7px;
-}
-#footer-text{
-  margin: 0 auto;
-  font-size: 14px;
-}
-
-/* Index Body */
-.about-me-section{
- justify-content: space-around;
-}
-.auth-image{
-  float: left;
-  background-color: #C33C54;
-  margin: 5px 10px 10px 5px;
-  padding: 8px;
-}
-
-.about-me{
-  color: #37718E;
+#portfolio-row{
+    height: 90vh;
+    
+    justify-content: space-between;
 }
 
 
-/* portfolio page */
-.portfolio-section{
-  background-color: #254E70;
-  /* Sizing */
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-
-
-  height: 100vh;
-
-}
-.carousel{
- align-items: center;
- text-align: center;
-  width: 60vw;
-  margin-left: 20%;
-  padding-top: 30vh;
-  padding-bottom: 15vh;
-}
-/* Saving images for later changes
-#pick-up-games{
-  background-image: url("../images/basketball.jpg")
-}
-#friend-finder{
-  background-image: url("../images/friend-finder.png")
-}
-#liri{
-  background-image: url("../images/siri.jpg")
-}
-#bamazon{
-  background-image: url("../images/storefront.jpg")
-}
-*/
-
-/* contact page */
+/* Contact Section*/
 .contact-section{
-/* Sizing */
+    height: 100%;
+    margin-bottom: 10rem;
+}
 
-height: 100vh;
+#contact-hdr{
+    text-align: center;
+    margin-bottom: 45px;
+
 }
-#contact-header{
-  color: #37718E;
+
+.contact-buttons{
+    justify-content: space-between;
+    text-align: center;
 }
-#email-box{
-  background-color: #183446;
-  padding: 40px;
-  
-}
-@media screen and (min-width:640px){
-  #brand-logo-desktop{
-    display: block;
+
+.circle {
+    width: 90px;
+    height: 90px;
+    line-height: 115px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 auto 40px;
+    
   }
-  #brand-logo-mobile{
-    display: none;
+.circle:hover {
+    box-shadow: 0px 15px 20px rgba(67, 68, 68, 0.4);
+    transform: translateY(-5px);
   }
-  
-}
-@media screen and (max-width:980px){
-  
 
+.footer{
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* Set the fixed height of the footer here */
+    line-height: 60px; /* Vertically center the text there */
+    background-color: #f5f5f5;
+    
 }
 
-@media screen and (max-width:768px){
-  
-}
+/* MEDIA QUERY*/
+
 @media screen and (max-width:640px){
-  #brand-logo-desktop{
-    display: none;
-  }
-  #brand-logo-mobile{
-    display: block;
-    height: 45px;
-    width: 45px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-  .brand-logo{
-    text-align: center;
-    margin-left: 0px;
-  }
-  .about-me{
-    text-align: center;
-  }
-  .auth-image{
-    display: block;
-    margin: 0 auto;
-    float: none;
-  }
-  #about-me-row{
-
-    text-align: center;
-  }
-  #contact-header{
-    text-align: center;
-  }
-  #contact-photo{
-    height: 0px;
-    width: 0px;
-  }
-  .portfolio-header{
-    text-align: center;
+   #portfolio-row{
+       justify-content: unset;
+   }
+   #carousel-card, #portfolio-hdr{
+    justify-content: unset;
+   }
+   .carousel-item .carousel-caption {
+    display: unset;
   }
 }
