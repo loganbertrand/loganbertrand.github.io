@@ -51,9 +51,20 @@ body{
     
 }
 #about-row{
-    height: 90vh;
-    
     justify-content: space-around;
+}
+
+.skills-row{
+    align-items: center;
+    justify-content: center;
+}
+
+.db-crd{
+    padding-top: 20px;
+}
+
+.about-section{
+    margin-bottom: 75px;
 }
 
 /*Portfolio Section*/
@@ -131,8 +142,5 @@ body{
 /* MEDIA QUERY*/
 
 @media screen and (max-width:640px){
-   .mern-img{
-       height: 200;
-       width: 300;
-   }
+   
 }
