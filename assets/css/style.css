@@ -76,18 +76,11 @@ body{
     align-items: center;
     justify-content: center
 }
-.card{
-    margin: 15px;
-    align-items: center;
-}
-.card-img-top {
-    width: 100%;
-    height: 40vh;
-    object-fit: fill;
-}
 
-.card-body{
-    align-items: center;
+.portfolio-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 
 
