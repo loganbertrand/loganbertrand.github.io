@@ -91,6 +91,11 @@ body{
     align-items: center;
 }
 
+.portfolio-image{
+    height: 400px; 
+    width: 700px;
+}
+
 
 /* Contact Section*/
 .contact-section{
