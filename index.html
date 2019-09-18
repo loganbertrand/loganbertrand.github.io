@@ -8,8 +8,11 @@
   <link rel="icon" href="assets/images/android-chrome-512x512.png">
   <title>Logan Bertrand</title>
   <!--CSS-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <!--Font Awesome-->
@@ -20,40 +23,45 @@
   <!--Initial Landing Page Section-->
   <a name="landing-section"></a>
   <section class="landing-section">
-    <nav class="navbar bg-transparent fixed-top navbar-expand-lg">
-      <a class="navbar-brand" href="#landing-section">
-        <img src="./assets/images/lb-logo.png" width="100" height="90" class="d-inline-block align-top"
-          alt="Logan Bertrand Logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon">
-          <i class="fa fa-navicon"></i>
-        </span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#about-me">About</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-
-      </div>
-    </nav>
-
-    <div class="jumbotron jumbotron-fluid">
+<div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper">
+            <a class="brand-logo" href="#landing-section">
+                Logan Bertrand
+              </a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+              <li>
+                  <a class="nav-link" href="#about-me">About</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+      <ul class="sidenav" id="mobile-demo">
+          <li>
+              <a class="nav-link" href="#about-me">About</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+      </ul>
+    <div class="jumbotron jumbotron-fluid parallax">
       <div class="container">
-        <h1 class="display-4">Logan Bertrand</h1>
-        <p class="lead">Welcome to my Web Development Portfolio</p>
+        <h1 class="display-4 animated fadeInDown">Welcome to my Web Development Portfolio</h1>
+        <a class="waves-effect waves-light btn-large animated fadeInDown black" href="#portfolio">See My Work</a>
       </div>
     </div>
+  
   </section>
 
   <!--About Me Section-->
@@ -72,68 +80,6 @@
             excited to use the skills I have learned in the tech or video game industry. I have a strong commitment to
             mastering javascript and related programming. I work well in both collaborating with others or independently
             on projects. </p>
-        </div>
-      </div>
-      <div class="row skills-row">
-        <div class="card mb-3" style="max-width: 540px; min-height: 181.33px ">
-          <div class="row no-gutters">
-            <div class="col-md-4 skills-img">
-              <img src="./assets/images/html-circle-icon-1.png" class="card-img" alt="HTML logo">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body text-center">
-                <h5 class="card-title">HTML</h5>
-                <p class="card-text">Foundation in HTML to build and properly structure websites and applications.
-                  Additional HTML coding skill with JSX. </p>
-                <p class="card-text"><small class="text-muted"></small></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card mb-3" style="max-width: 540px; min-height: 181.33px">
-          <div class="row no-gutters">
-            <div class="col-md-4 skills-img">
-              <img src="./assets/images/css-circle-icon.png" class="card-img" alt="CSS logo">
-            </div>
-            <div class="col-md-8 text-center">
-              <div class="card-body">
-                <h5 class="card-title">CSS</h5>
-                <p class="card-text">Experience with basic CSS formatting, as well as CSS libraries including Bootstrap
-                  and Materialize. </p>
-                <p class="card-text"><small class="text-muted"></small></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card mb-3" style="max-width: 540px; min-height: 181.33px">
-          <div class="row no-gutters">
-            <div class="col-md-4 skills-img">
-              <img src="./assets/images/js-circle-icon.png" class="card-img" alt="Javascript logo">
-            </div>
-            <div class="col-md-8 text-center">
-              <div class="card-body">
-                <h5 class="card-title">Javascript</h5>
-                <p class="card-text">Strong abilities in front-end javascript, using various frameworks and libraries:
-                  React, JQuery, Node, Material UI, React-Bootstrap.</p>
-                <p class="card-text"><small class="text-muted"></small></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card mb-3" style="max-width: 540px; min-height: 181.33px">
-          <div class="row no-gutters">
-            <div class="col-md-4 skills-img">
-              <img src="./assets/images/database-circle-icon.png" class="db-crd card-img" alt="Back-End">
-            </div>
-            <div class="col-md-8 text-center">
-              <div class="card-body">
-                <h5 class="card-title">Back-End</h5>
-                <p class="card-text">Primary focus in back-end skills that involve databases utilizing MongoDB or MySQL.
-                </p>
-                <p class="card-text"><small class="text-muted"></small></p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -333,36 +279,36 @@
   <section class="contact-section">
     <div class="container">
       <div class="row">
-        <h1 id="contact-hdr" class="display-4 col-sm-12 col-md-12">Contact</h1>
+        <h1 id="contact-hdr" class="display-4 col s12 m12">Contact</h1>
       </div>
-
-      <div class="row contact-buttons">
-        <div class="col-sm-12 col-md-2">
+      
+      <div class="row contact-btns">
+        <div class="col s12 m2">
           <a href="mailto:loganwbertrand@gmail.com" target="_blank">
             <div class="circle" style="background: #f05d5e;"><i class="fas fa-3x fa-envelope"></i></div>
           </a>
           <p>Email</p>
         </div>
-        <div class="col-sm-12 col-md-2">
+        <div class="col s12 m2">
           <a href="assets/resume.pdf" target="_blank">
             <div class="circle" style="background: #f05d5e;"><i class="fas fa-3x fa-file-alt"></i></div>
           </a>
           <p>Resume</p>
         </div>
-        <div class="col-sm-12 col-md-2">
+        <div class="col s12 m2">
           <a href="#">
             <div class="circle" style="background: #f05d5e;"><i class="fas fa-3x fa-mobile-alt"></i></div>
           </a>
           <p>+1 (760) 822-1629</p>
         </div>
 
-        <div class="col-sm-12 col-md-2">
+        <div class="col s12 m2">
           <a href="https://www.linkedin.com/in/logan-bertrand-/" target="_blank">
             <div class="circle" style="background: #f05d5e;"><i class="fab fa-3x fa-linkedin"></i></div>
           </a>
           <p>LinkedIn</p>
         </div>
-        <div class="col-sm-12 col-md-2">
+        <div class="col s12 m2">
           <a href="https://github.com/loganbertrand" target="_blank">
             <div class="circle" style="background: #f05d5e;"><i class="fab fa-3x fa-github"></i></div>
           </a>
@@ -378,12 +324,8 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="assets/js/code.js"></script>
 </body>
 

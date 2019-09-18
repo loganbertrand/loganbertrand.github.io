@@ -10,8 +10,8 @@ body{
     overflow-x: hidden;
     
 }
-.nav-link{
-    color: #595959;
+nav{
+    background-color: black;
 }
 /*Jumbotron*/
 .jumbotron{
@@ -25,10 +25,10 @@ body{
     /* Text styles */
     text-align: center;
     color: white;
-    text-shadow: 1px 1px 2px pink;
+    text-shadow: 1px 1px 2px black;
 
     /* Background styles */
-    background-image: url("../images/dan-aragon-382945-unsplash.jpg");
+    background-image: url("../images/primary-colors/primary-color-bubbles.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -118,9 +118,8 @@ body{
 
 }
 
-.contact-buttons{
-    justify-content: space-between;
-    text-align: center;
+.contact-btns{
+    justify-content: center;
 }
 
 .circle {

@@ -1,0 +1,23 @@
+{
+  "name": "loganbertrand.github.io",
+  "version": "1.0.0",
+  "description": "Portfolio has been recreated for better functionality",
+  "main": "index.js",
+  "dependencies": {
+    "animate.css": "^3.7.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loganbertrand/loganbertrand.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/loganbertrand/loganbertrand.github.io/issues"
+  },
+  "homepage": "https://github.com/loganbertrand/loganbertrand.github.io#readme"
+}
