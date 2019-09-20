@@ -8,10 +8,17 @@ html{
 body{
     margin-bottom: 60px;
     overflow-x: hidden;
+    background-color: #22313F;
     
 }
 .nav-link{
-    color: #595959;
+    color: greenyellow;
+}
+.navbar-brand{
+    color: white;
+}
+nav{
+    background-color: #22313F
 }
 /*Jumbotron*/
 .jumbotron{
@@ -25,19 +32,21 @@ body{
     /* Text styles */
     text-align: center;
     color: white;
-    text-shadow: 1px 1px 2px pink;
+    text-shadow: 1px 1px 2px black;
 
     /* Background styles */
-    background-image: url("../images/dan-aragon-382945-unsplash.jpg");
+    background-image: url("../images/primary-color-bubbles.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
-    margin-bottom: 7rem;
+    
 }
 
-
+.landing-btn{
+    background-color: black;
+}
 
 /* About Me Section */
 
@@ -66,14 +75,25 @@ body{
 }
 
 .about-section{
-    margin-bottom: 75px;
+    background-image: linear-gradient(176deg, #22313F 70%, white calc(70% + 2px));
+    padding-bottom: 55px;
+}
+.about-txt{
+    color: white;
+}
+#aboutme{
+    background-color: white;
+}
+.about-p{
+    margin-bottom: 25px;
 }
 
 /*Portfolio Section*/
 .portfolio-section{
-    background-color: #f5f5f5;
     margin-bottom: 65px;
     padding-bottom: 40px;
+    padding-top: 10px;
+    background-image: linear-gradient(176deg, white 70%, #22313F calc(70% + 2px));
 }
 .portfolio-rw{
     align-items: center;
@@ -110,6 +130,7 @@ body{
 .contact-section{
     height: 100%;
     margin-bottom: 10rem;
+    background-color: #22313F;
 }
 
 #contact-hdr{

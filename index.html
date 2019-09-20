@@ -20,10 +20,9 @@
   <!--Initial Landing Page Section-->
   <a name="landing-section"></a>
   <section class="landing-section">
-    <nav class="navbar bg-transparent fixed-top navbar-expand-lg">
+    <nav class="navbar shadow fixed-top navbar-expand-lg">
       <a class="navbar-brand" href="#landing-section">
-        <img src="./assets/images/lb-logo.png" width="100" height="90" class="d-inline-block align-top"
-          alt="Logan Bertrand Logo">
+        Logan Bertrand
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,8 +49,8 @@
 
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-4">Logan Bertrand</h1>
-        <p class="lead">Welcome to my Web Development Portfolio</p>
+        <h1 class="display-4">Welcome to my Web Development Portfolio</h1>
+        <a href="#portfolio" ><button class="btn btn-info landing-btn">See My Work</button></a>
       </div>
     </div>
   </section>
@@ -62,10 +61,11 @@
     <div class="container">
       <div id="about-row" class="row">
         <div class="col-sm-12 col-md-12">
-          <h1 id="about-hdr" class="display-4 ">About Me</h1>
+          <h1 id="about-hdr" class="display-4 about-txt">About Me</h1>
         </div>
         <div class="col-sm-12 col-md-12">
-          <p>I am a Web Developer who studied at UCSD coding bootcamp. I enjoy creating interactive user experiences
+          <p class="about-txt about-p">I am a Web Developer who studied at UCSD coding bootcamp. I enjoy creating
+            interactive user experiences
             that anyone
             can understand, along with being highly creative in regards to problem solving and innovating a website. I
             am a quick learner
@@ -98,8 +98,8 @@
             <div class="col-md-8 text-center">
               <div class="card-body">
                 <h5 class="card-title">CSS</h5>
-                <p class="card-text">Experience with basic CSS formatting, as well as CSS libraries including Bootstrap
-                  and Materialize. </p>
+                <p class="card-text">Experience with basic CSS formatting, as well as CSS libraries including React
+                  Bootstrap, Material UI, Bootstrap, and Materialize. </p>
                 <p class="card-text"><small class="text-muted"></small></p>
               </div>
             </div>
@@ -225,102 +225,100 @@
             </div>
           </div>
         </div>
-        </div>
-        <!------------------------------------------------------------------------DESKTOP PORTFOLIO------------------------------------------------------------------------------------->
-        <div id="desktop-portfolio">
-          <div class="row portfolio-rw">
-            <div class="col-md-3 col-sm-12">
-              <div class="card">
-                <img src="./assets/images/winnable.png" alt="winnable" class="portfolio-image card-img">
-              </div>
-            </div>
-
-            <div class="col-md-5 col-sm-12 text-center">
-              <div class="card portfolio-text">
-                <div class="card-body">
-                  <p>Application to create and search for Overwatch teams, players and player stats with an integrated
-                    user login
-                    system.</p>
-                  <p>Technologies Used: React, React Bootstrap, MongoDB, Mongoose, Express, Node, HTML, CSS, JavaScript
-                  </p>
-                  <a href="https://winnable.herokuapp.com/" target="_blank"><button
-                      class="btn btn-info">Live</button></a>
-                  <a href="https://github.com/randomslap/Project-3" target="_blank"><button
-                      class="btn btn-info">GitHub</button></a>
-                </div>
-              </div>
-
+      </div>
+      <!------------------------------------------------------------------------DESKTOP PORTFOLIO------------------------------------------------------------------------------------->
+      <div id="desktop-portfolio">
+        <div class="row portfolio-rw">
+          <div class="col-md-3 col-sm-12">
+            <div class="card">
+              <img src="./assets/images/winnable.png" alt="winnable" class="portfolio-image card-img">
             </div>
           </div>
-          <hr>
-          <div class="row portfolio-rw">
-            <div class="col-md-3 col-sm-12">
-              <div class="card">
-                <img src="./assets/images/garagesail 11-32-05-993.png" alt="garage sale"
-                  class="portfolio-image card-img">
-              </div>
-            </div>
-            <div class="col-md-5 col-sm-12 text-center">
-              <div class="card portfolio-text">
-                <div class="card-body">
-                  <p>Garage Sale Web Application to find and post garage sales in your local area.</p>
-                  <p>Technologies Used: Handlebars, MySQL, Sequelize, Bootstrap, HTML, CSS, JavaScript, AJAX, JQuery,
-                    Node </p>
-                  <a href="https://garage-sail.herokuapp.com/" target="_blank"><button
-                      class="btn btn-info">Live</button></a>
-                  <a href="https://github.com/loganbertrand/project2app" target="_blank"><button
-                      class="btn btn-info">GitHub</button></a>
-                </div>
-              </div>
 
-            </div>
-
-          </div>
-          <hr>
-          <div class="row portfolio-rw">
-            <div class="col-md-3 col-sm-12">
-              <div class="card">
-                <img src="./assets/images/pickupgames.png" alt="pick up games" class="portfolio-image card-img">
+          <div class="col-md-5 col-sm-12 text-center">
+            <div class="card portfolio-text">
+              <div class="card-body">
+                <p>Application to create and search for Overwatch teams, players and player stats with an integrated
+                  user login
+                  system.</p>
+                <p>Technologies Used: React, React Bootstrap, MongoDB, Mongoose, Express, Node, HTML, CSS, JavaScript
+                </p>
+                <a href="https://winnable.herokuapp.com/" target="_blank"><button class="btn btn-info">Live</button></a>
+                <a href="https://github.com/randomslap/Project-3" target="_blank"><button
+                    class="btn btn-info">GitHub</button></a>
               </div>
-            </div>
-            <div class="col-md-5 col-sm-12 text-center">
-              <div class="card portfolio-text">
-                <div class="card-body">
-                  <p>Web Application to find and post local pick-up sports games, utilizing Google Maps for locations.
-                  </p>
-                  <p>Technologies Used: Firebase, Bootstrap, HTML, CSS, JavaScript, JQuery, Node</p>
-                  <a href="https://loganbertrand.github.io/pick-up-games/" target="_blank"><button
-                      class="btn btn-info">Live</button></a>
-                  <a href="https://github.com/loganbertrand/pick-up-games" target="_blank"><button
-                      class="btn btn-info">GitHub</button></a>
-                </div>
-              </div>
-
-            </div>
-          </div>
-          <hr>
-          <div class="row portfolio-rw">
-            <div class="col-md-3 col-sm-12">
-              <div class="card">
-                <img src="./assets/images/react-memory.png" alt="pick up games" class="portfolio-image card-img">
-              </div>
-            </div>
-            <div class="col-md-5 col-sm-12 text-center">
-              <div class="card portfolio-text">
-                <div class="card-body">
-                  <p>Memory game web application built with the React Library.</p>
-                  <p>Technologies Used: React, Bootstrap, HTML, CSS, JavaScript</p>
-                  <a href="https://loganbertrand.github.io/react-memory-game/" target="_blank"><button
-                      class="btn btn-info">Live</button></a>
-                  <a href="https://github.com/loganbertrand/react-memory-game" target="_blank"><button
-                      class="btn btn-info">GitHub</button></a>
-                </div>
-              </div>
-
             </div>
 
           </div>
         </div>
+        <hr>
+        <div class="row portfolio-rw">
+          <div class="col-md-3 col-sm-12">
+            <div class="card">
+              <img src="./assets/images/garagesail 11-32-05-993.png" alt="garage sale" class="portfolio-image card-img">
+            </div>
+          </div>
+          <div class="col-md-5 col-sm-12 text-center">
+            <div class="card portfolio-text">
+              <div class="card-body">
+                <p>Garage Sale Web Application to find and post garage sales in your local area.</p>
+                <p>Technologies Used: Handlebars, MySQL, Sequelize, Bootstrap, HTML, CSS, JavaScript, AJAX, JQuery,
+                  Node </p>
+                <a href="https://garage-sail.herokuapp.com/" target="_blank"><button
+                    class="btn btn-info">Live</button></a>
+                <a href="https://github.com/loganbertrand/project2app" target="_blank"><button
+                    class="btn btn-info">GitHub</button></a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <hr>
+        <div class="row portfolio-rw">
+          <div class="col-md-3 col-sm-12">
+            <div class="card">
+              <img src="./assets/images/pickupgames.png" alt="pick up games" class="portfolio-image card-img">
+            </div>
+          </div>
+          <div class="col-md-5 col-sm-12 text-center">
+            <div class="card portfolio-text">
+              <div class="card-body">
+                <p>Web Application to find and post local pick-up sports games, utilizing Google Maps for locations.
+                </p>
+                <p>Technologies Used: Firebase, Bootstrap, HTML, CSS, JavaScript, JQuery, Node</p>
+                <a href="https://loganbertrand.github.io/pick-up-games/" target="_blank"><button
+                    class="btn btn-info">Live</button></a>
+                <a href="https://github.com/loganbertrand/pick-up-games" target="_blank"><button
+                    class="btn btn-info">GitHub</button></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <hr>
+        <div class="row portfolio-rw">
+          <div class="col-md-3 col-sm-12">
+            <div class="card">
+              <img src="./assets/images/react-memory.png" alt="pick up games" class="portfolio-image card-img">
+            </div>
+          </div>
+          <div class="col-md-5 col-sm-12 text-center">
+            <div class="card portfolio-text">
+              <div class="card-body">
+                <p>Memory game web application built with the React Library.</p>
+                <p>Technologies Used: React, Bootstrap, HTML, CSS, JavaScript</p>
+                <a href="https://loganbertrand.github.io/react-memory-game/" target="_blank"><button
+                    class="btn btn-info">Live</button></a>
+                <a href="https://github.com/loganbertrand/react-memory-game" target="_blank"><button
+                    class="btn btn-info">GitHub</button></a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
 
 
   </section>
@@ -333,7 +331,7 @@
   <section class="contact-section">
     <div class="container">
       <div class="row">
-        <h1 id="contact-hdr" class="display-4 col-sm-12 col-md-12">Contact</h1>
+        <h1 id="contact-hdr" class="display-4 col-sm-12 col-md-12 about-txt">Contact</h1>
       </div>
 
       <div class="row contact-buttons">
@@ -341,32 +339,32 @@
           <a href="mailto:loganwbertrand@gmail.com" target="_blank">
             <div class="circle" style="background: #f05d5e;"><i class="fas fa-3x fa-envelope"></i></div>
           </a>
-          <p>Email</p>
+          <p class="about-txt">Email</p>
         </div>
         <div class="col-sm-12 col-md-2">
           <a href="assets/resume.pdf" target="_blank">
             <div class="circle" style="background: #f05d5e;"><i class="fas fa-3x fa-file-alt"></i></div>
           </a>
-          <p>Resume</p>
+          <p class="about-txt">Resume</p>
         </div>
         <div class="col-sm-12 col-md-2">
           <a href="#">
             <div class="circle" style="background: #f05d5e;"><i class="fas fa-3x fa-mobile-alt"></i></div>
           </a>
-          <p>+1 (760) 822-1629</p>
+          <p class="about-txt">+1 (760) 822-1629</p>
         </div>
 
         <div class="col-sm-12 col-md-2">
           <a href="https://www.linkedin.com/in/logan-bertrand-/" target="_blank">
             <div class="circle" style="background: #f05d5e;"><i class="fab fa-3x fa-linkedin"></i></div>
           </a>
-          <p>LinkedIn</p>
+          <p class="about-txt">LinkedIn</p>
         </div>
         <div class="col-sm-12 col-md-2">
           <a href="https://github.com/loganbertrand" target="_blank">
             <div class="circle" style="background: #f05d5e;"><i class="fab fa-3x fa-github"></i></div>
           </a>
-          <p>GitHub</p>
+          <p class="about-txt">GitHub</p>
         </div>
       </div>
     </div>
@@ -384,7 +382,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-  <script src="assets/js/code.js"></script>
 </body>
 
 </html>
