@@ -10,17 +10,27 @@
   <!--CSS-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <!--Font Awesome-->
   <script src="https://kit.fontawesome.com/9d235c6ec7.js"></script>
+  <!--Scroll Reveal-->
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
   <!--Initial Landing Page Section-->
   <a name="landing-section"></a>
   <section class="landing-section">
-    <nav class="navbar shadow fixed-top navbar-expand-lg">
+
+
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4 landing-message load-hidden">Welcome to my Web Development Portfolio</h1>
+        <a href="#portfolio"><button class="btn btn-dark landing-btn load-hidden">See My Work</button></a>
+      </div>
+    </div>
+
+    <nav class="navbar shadow navbar-expand-lg" id="navbar">
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,10 +40,10 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <a class="navbar-brand" href="#landing-section">
-          Logan Bertrand
-        </a>
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#landing-section">Home</a>
+          </li>
           <li class="nav-item active">
             <a class="nav-link" href="#about-me">About</a>
           </li>
@@ -44,16 +54,9 @@
             <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
-
       </div>
+
     </nav>
-
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">Welcome to my Web Development Portfolio</h1>
-        <a href="#portfolio"><button class="btn landing-btn">See My Work</button></a>
-      </div>
-    </div>
   </section>
 
   <!--About Me Section-->
@@ -62,10 +65,11 @@
     <div class="container">
       <div id="about-row" class="row">
         <div class="col-sm-12 col-md-12">
-          <h1 id="about-hdr" class="display-4 about-txt">About Me</h1>
+          <h1 id="about-hdr" class="display-4 about-txt load-hidden">About Me</h1>
         </div>
         <div class="col-sm-12 col-md-12">
-          <p class="about-txt about-p">I am a Full-Stack Web Developer who studied at UCSD coding bootcamp. I enjoy creating
+          <p class="about-txt about-p">I am a Full-Stack Web Developer who studied at UCSD coding bootcamp. I enjoy
+            creating
             interactive user experiences
             that anyone
             can understand, along with being highly creative in regards to problem solving and innovating a website. I
@@ -76,7 +80,7 @@
         </div>
       </div>
       <div class="row skills-row">
-        <div class="card mb-3 skills-crd">
+        <div class="card mb-3 skills-crd load-hidden">
           <div class="row no-gutters">
             <div class="col-md-4 skill-img-col">
               <img src="./assets/images/html-circle-icon-1.png" class="card-img skills-img" alt="HTML logo">
@@ -91,7 +95,7 @@
             </div>
           </div>
         </div>
-        <div class="card mb-3 skills-crd">
+        <div class="card mb-3 skills-crd load-hidden">
           <div class="row no-gutters">
             <div class="col-md-4 skill-img-col">
               <img src="./assets/images/css-circle-icon.png" class="card-img skills-img" alt="CSS logo">
@@ -106,7 +110,7 @@
             </div>
           </div>
         </div>
-        <div class="card mb-3 skills-crd">
+        <div class="card mb-3 skills-crd load-hidden">
           <div class="row no-gutters">
             <div class="col-md-4 skill-img-col">
               <img src="./assets/images/js-circle-icon.png" class="card-img skills-img" alt="Javascript logo">
@@ -121,7 +125,7 @@
             </div>
           </div>
         </div>
-        <div class="card mb-3 skills-crd">
+        <div class="card mb-3 skills-crd load-hidden">
           <div class="row no-gutters">
             <div class="col-md-4 skill-img-col">
               <img src="./assets/images/database-circle-icon.png" class="db-crd card-img skills-img" alt="Back-End">
@@ -147,7 +151,7 @@
 
       <div class="row portfolio-rw">
         <div class="col-md-12">
-          <h1 id="about-hdr" class="display-4 ">Portfolio</h1>
+          <h1 id="about-hdr" class="display-4 portfolio-hdr load-hidden">Portfolio</h1>
         </div>
       </div>
 
@@ -156,21 +160,23 @@
           <div class="col-md-6 col-sm-12">
             <figure class="figure port-img-wrap">
               <a href="https://winnable.herokuapp.com/" target="_blank">
-                <img src="./assets/images/winnable.png" alt="winnable" class="portfolio-image img-fluid figure-img rounded">
-                  <div class="portfolio-hover">
-                      <i class="fas fa-external-link-alt fa-3x"></i>
-                  </div>
-                </a>
-              
+                <img src="./assets/images/winnable.png" alt="winnable"
+                  class="portfolio-image img-fluid figure-img rounded">
+                <div class="portfolio-hover">
+                  <i class="fas fa-external-link-alt fa-3x"></i>
+                </div>
+              </a>
+
               <figcaption class="h2">Winnable</figcaption>
             </figure>
           </div>
           <div class="col-md-6 col-sm-12">
             <figure class="figure port-img-wrap">
-              <a href="https://garage-sail.herokuapp.com/" target="_blank"><img src="./assets/images/garagesail-edited.png"
-                  alt="winnable" class="portfolio-image img-fluid figure-img rounded"></a>
+              <a href="https://garage-sail.herokuapp.com/" target="_blank"><img
+                  src="./assets/images/garagesail-edited.png" alt="winnable"
+                  class="portfolio-image img-fluid figure-img rounded"></a>
               <div class="portfolio-hover">
-                  <i class="fas fa-external-link-alt fa-3x"></i>
+                <i class="fas fa-external-link-alt fa-3x"></i>
               </div>
               <figcaption class="h2">Garage Sail</figcaption>
             </figure>
@@ -178,25 +184,29 @@
         </div>
         <hr>
         <div class="row portfolio-rw">
-            <div class="col-md-6 col-sm-12">
-              <figure class="figure port-img-wrap">
-                <a href="https://loganbertrand.github.io/pick-up-games/" target="_blank"><img src="./assets/images/pickupgames-edited.png" alt="winnable" class="portfolio-image img-fluid figure-img rounded"></a>
-                <div class="portfolio-hover">
-                    <i class="fas fa-external-link-alt fa-3x"></i>
-                </div>
-                <figcaption class="h2" style="color: white">SD Pick Up Games</figcaption>
-              </figure>
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <figure class="figure port-img-wrap">
-                <a href="https://loganbertrand.github.io/react-memory-game/" target="_blank"><img src="./assets/images/react-memory-edited.png" alt="winnable" class="portfolio-image img-fluid figure-img rounded"></a>
-                <div class="portfolio-hover">
-                    <i class="fas fa-external-link-alt fa-3x"></i>
-                </div>
-                <figcaption class="h2" style="color: white">React Memory</figcaption>
-              </figure>
-            </div>
+          <div class="col-md-6 col-sm-12">
+            <figure class="figure port-img-wrap">
+              <a href="https://loganbertrand.github.io/pick-up-games/" target="_blank"><img
+                  src="./assets/images/pickupgames-edited.png" alt="winnable"
+                  class="portfolio-image img-fluid figure-img rounded"></a>
+              <div class="portfolio-hover">
+                <i class="fas fa-external-link-alt fa-3x"></i>
+              </div>
+              <figcaption class="h2" style="color: white">SD Pick Up Games</figcaption>
+            </figure>
           </div>
+          <div class="col-md-6 col-sm-12">
+            <figure class="figure port-img-wrap">
+              <a href="https://loganbertrand.github.io/react-memory-game/" target="_blank"><img
+                  src="./assets/images/react-memory-edited.png" alt="winnable"
+                  class="portfolio-image img-fluid figure-img rounded"></a>
+              <div class="portfolio-hover">
+                <i class="fas fa-external-link-alt fa-3x"></i>
+              </div>
+              <figcaption class="h2" style="color: white">React Memory</figcaption>
+            </figure>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -210,7 +220,7 @@
   <section class="contact-section">
     <div class="container">
       <div class="row">
-        <h1 id="contact-hdr" class="display-4 col-sm-12 col-md-12 about-txt">Contact</h1>
+        <h1 id="contact-hdr" class="display-4 col-sm-12 col-md-12 about-txt load-hidden">Contact</h1>
       </div>
 
       <div class="row contact-buttons">
@@ -261,6 +271,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  <script src="./code.js"></script>
 </body>
 
 </html>
