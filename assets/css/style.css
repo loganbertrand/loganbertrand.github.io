@@ -15,11 +15,15 @@ body{
     
 }
 .nav-link{
-    color: greenyellow;
+    color: white;
 }
 nav{
     background-color: #22313F;
     z-index: 1000;
+}
+.navbar-toggler-icon{
+    color: white;
+    padding-top: 6px;
 }
 .sticky {
     position: fixed;
@@ -45,7 +49,7 @@ nav{
     text-shadow: 1px 1px 2px black;
 
     /* Background styles */
-    background-image: url("../images/primary-color-bubbles.jpg");
+    background-image: url("../images/vector.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -104,7 +108,7 @@ nav{
 }
 
 .about-section{
-    background-image: linear-gradient(176deg, #22313F 70%, white calc(70% + 2px));
+    background-image: linear-gradient(176deg, #1F5577 70%, white calc(70% + 2px));
     padding-top: 15px;
     padding-bottom: 35px;
 }
@@ -120,10 +124,10 @@ nav{
 
 /*Portfolio Section*/
 .portfolio-section{
-    margin-bottom: 65px;
-    padding-bottom: 40px;
+    
+    padding-bottom: 100px;
     padding-top: 10px;
-    background-image: linear-gradient(176deg, white 70%, #22313F calc(70% + 2px));
+    background-image: linear-gradient(176deg, white 70%, #1F5577 calc(70% + 2px));
 }
 .portfolio-rw{
     align-items: center;
@@ -195,7 +199,7 @@ nav{
 .contact-section{
     height: 100%;
     padding-bottom: 10rem;
-    background-color: #22313F;
+    background-color: #1F5577;
 }
 
 #contact-hdr{
@@ -244,26 +248,11 @@ nav{
 /* MEDIA QUERY*/
 
 @media screen and (min-width:641px){
-    /* #desktop-portfolio{
-        display: block;
-    }
-    #mobile-portfolio{
-        display: none;
-    } */
 
-    
  }
 
 @media screen and (max-width:640px){
-    /* #desktop-portfolio{
-        display: none;
-    }
-    #mobile-portfolio{
-        display: block;
-    }
-    .navbar{
-        display: none;
-    } */
+    
     .skill-img-col{
         align-items: center;
     }
