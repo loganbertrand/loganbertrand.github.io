@@ -261,6 +261,6 @@ nav{
         
     }
     .jumbotron{
-        background-size: auto;
+        background-image: url('../images/vector-mobile.jpg')
     }
 }
