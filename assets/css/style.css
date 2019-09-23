@@ -260,4 +260,7 @@ nav{
         max-width: 300px; 
         
     }
+    .jumbotron{
+        background-image: url('../images/vector-mobile.jpg')
+    }
 }
