@@ -1,0 +1,26 @@
+.jumbotron{
+    height: 100vh;
+
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Text styles */
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+
+    /* Background styles */
+    background-image: url("../../assets/galaxy.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    margin-bottom: 2rem;
+
+}
+.container{
+  z-index: 350;
+}

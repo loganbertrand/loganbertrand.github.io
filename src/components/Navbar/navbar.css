@@ -1,0 +1,29 @@
+.bigNav{
+  margin-left:auto;
+}
+
+
+
+@media (max-width: 690px) {
+
+.bigNav{
+  display: none;
+}
+
+.smallNav{
+  display: contents;
+}
+
+}
+
+@media (min-width: 691px) {
+
+.bigNav{
+  display: contents;
+}
+
+.smallNav{
+  display: none;
+}
+
+}

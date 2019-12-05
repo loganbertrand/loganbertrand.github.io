@@ -1,0 +1,9 @@
+.html-container{
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.html-img{
+    height: 100px;
+    width: 100px;
+}
