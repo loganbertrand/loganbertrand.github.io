@@ -1,0 +1,9 @@
+.js-container{
+    justify-content: space-between;
+    text-align: center;
+}
+
+.js-img{
+    height: 100px;
+    width: 100px;
+}
